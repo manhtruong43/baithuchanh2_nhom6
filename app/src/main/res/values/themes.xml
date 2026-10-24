@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="Theme.EmployeeSalary" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/bg_screen</item>
+        <item name="actionBarStyle">@style/AppActionBar</item>
+    </style>
+
+    <style name="AppActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@color/primary</item>
+        <item name="titleTextStyle">@style/AppActionBarTitle</item>
+    </style>
+
+    <style name="AppActionBarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Thẻ chức năng ở màn hình chính -->
+    <style name="MenuCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardBackgroundColor">@color/card_bg</item>
+    </style>
+
+    <style name="MenuCardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_main</item>
+    </style>
+
+    <!-- Ô số liệu tổng hợp -->
+    <style name="StatLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_sub</item>
+    </style>
+
+    <style name="StatValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_main</item>
+    </style>
+
+</resources>

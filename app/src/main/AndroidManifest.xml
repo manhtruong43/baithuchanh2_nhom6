@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EmployeeSalary">
+
+        <!-- ===== TV1: Đăng nhập + màn hình chính ===== -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.EmployeeHomeActivity"
+            android:exported="false" />
+
+        <!-- ===== TV2: Quản lý nhân viên + quản lý lương ===== -->
+        <activity
+            android:name=".ui.employee.EmployeeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.employee.EmployeeFormActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.salary.AdminSalaryActivity"
+            android:exported="false" />
+
+        <!-- ===== TV3: Chấm công + lịch sử + lương cá nhân ===== -->
+        <activity
+            android:name=".ui.attendance.AttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.attendance.AttendanceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.attendance.MySalaryActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
